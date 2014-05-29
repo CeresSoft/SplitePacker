@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SplitePacker.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ImageFilter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">pngファイル(*.png)|*.png|すべてのファイル(*.*)|*.*</Value>
+    </Setting>
+    <Setting Name="PackFilter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SpritePackerファイル(*.spack)|*.spack|すべてのファイル(*.*)|*.*</Value>
+    </Setting>
+    <Setting Name="PackDefault" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">新規SpritePacker.spack</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

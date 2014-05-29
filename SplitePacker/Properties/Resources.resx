@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IDS_BG_ARGS_EMPTY" xml:space="preserve">
+    <value>パック失敗
+バックグラウンド実行に失敗しました</value>
+  </data>
+  <data name="IDS_BG_END" xml:space="preserve">
+    <value>バックグラウンドスレッド終了</value>
+  </data>
+  <data name="IDS_BG_PACK_FILE" xml:space="preserve">
+    <value>パック中です... {0}</value>
+  </data>
+  <data name="IDS_BG_PACK_INVALID_PATH" xml:space="preserve">
+    <value>パック失敗
+無効なパスが指定されました</value>
+  </data>
+  <data name="IDS_BG_PACK_OVERFLOW" xml:space="preserve">
+    <value>パック失敗
+画像が入りきりませんでした</value>
+  </data>
+  <data name="IDS_BG_PACK_SAVE" xml:space="preserve">
+    <value>パック画像を保存しています</value>
+  </data>
+  <data name="IDS_BG_START" xml:space="preserve">
+    <value>バックグラウンドスレッド開始</value>
+  </data>
+  <data name="IDS_MAIN_CLEAR_CLICK" xml:space="preserve">
+    <value>初期化ボタンクリック</value>
+  </data>
+  <data name="IDS_MAIN_CLEAR_EXCEPTION" xml:space="preserve">
+    <value>初期化処理で例外が発生しました</value>
+  </data>
+  <data name="IDS_MAIN_CLOSING_EXCEPTION" xml:space="preserve">
+    <value>FormClosingで例外が発生しました。</value>
+  </data>
+  <data name="IDS_MAIN_CLOSING_NO_SAVE" xml:space="preserve">
+    <value>変更が保存されていませんが
+終了してもよろしいでしょうか？</value>
+  </data>
+  <data name="IDS_MAIN_COMPLETED" xml:space="preserve">
+    <value>RunWorkerCompleted</value>
+  </data>
+  <data name="IDS_MAIN_CREATE_CLICK" xml:space="preserve">
+    <value>作成ボタンクリック</value>
+  </data>
+  <data name="IDS_MAIN_CREATE_NO_TWO_EXP_A" xml:space="preserve">
+    <value>パック画像横幅/縦幅が２の累乗ではありませんが
+作成してよいですか？</value>
+  </data>
+  <data name="IDS_MAIN_CREATE_NO_TWO_EXP_H" xml:space="preserve">
+    <value>パック画像縦幅が２の累乗ではありませんが
+作成してよろしいですか？</value>
+  </data>
+  <data name="IDS_MAIN_CREATE_NO_TWO_EXP_W" xml:space="preserve">
+    <value>パック画像横幅が２の累乗ではありませんが
+作成してよいですか？</value>
+  </data>
+  <data name="IDS_MAIN_DRAG_DROP" xml:space="preserve">
+    <value>DragDrop</value>
+  </data>
+  <data name="IDS_MAIN_DRAG_DROP_EXCEPTION" xml:space="preserve">
+    <value>Drop処理で例外が発生しました</value>
+  </data>
+  <data name="IDS_MAIN_DRAG_ENETR" xml:space="preserve">
+    <value>DragEnetr</value>
+  </data>
+  <data name="IDS_MAIN_DRAG_ENTER_EXCEPTION" xml:space="preserve">
+    <value>DragEnterで例外が発生しました</value>
+  </data>
+  <data name="IDS_MAIN_DROP_ADD" xml:space="preserve">
+    <value>リストにファイルを追加 [{0}]</value>
+  </data>
+  <data name="IDS_MAIN_DROP_FORMAT_FAILED" xml:space="preserve">
+    <value>フォーマット異常です。エクスプローラーからのファイルDropのみ有効です。</value>
+  </data>
+  <data name="IDS_MAIN_END_EXCEPTION" xml:space="preserve">
+    <value>パック失敗
+パック終了処理中に例外が発生しました</value>
+  </data>
+  <data name="IDS_MAIN_END_PROC_EXCEPTION" xml:space="preserve">
+    <value>パック失敗
+画像パック中に例外が発生しました</value>
+  </data>
+  <data name="IDS_MAIN_END_SUCCESS" xml:space="preserve">
+    <value>パック成功</value>
+  </data>
+  <data name="IDS_MAIN_FILE_EXCEPTION" xml:space="preserve">
+    <value>ファイル選択で例外が発生しました</value>
+  </data>
+  <data name="IDS_MAIN_HEIGHT_CHANGE_EXCEPTION" xml:space="preserve">
+    <value>縦幅変更イベントで例外発生</value>
+  </data>
+  <data name="IDS_MAIN_LOAD_EXCEPTION" xml:space="preserve">
+    <value>読込時に例外が発生しました</value>
+  </data>
+  <data name="IDS_MAIN_LOAD_FAILED" xml:space="preserve">
+    <value>ファイルの読込に失敗しました。(path={0})</value>
+  </data>
+  <data name="IDS_MAIN_LOAD_NOT_SAVED" xml:space="preserve">
+    <value>変更が保存されていませんが
+読込してもよろしいですか？</value>
+  </data>
+  <data name="IDS_MAIN_LOAD_PATH_EMPTY" xml:space="preserve">
+    <value>読込パスが指定されていません。</value>
+  </data>
+  <data name="IDS_MAIN_MSG_EXCEPTION" xml:space="preserve">
+    <value>メッセージ表示時に例外発生</value>
+  </data>
+  <data name="IDS_MAIN_PACKKING" xml:space="preserve">
+    <value>パック実行中のため終了</value>
+  </data>
+  <data name="IDS_MAIN_PATH_CHANGE_EXCEPTION" xml:space="preserve">
+    <value>パス変更イベントで例外発生</value>
+  </data>
+  <data name="IDS_MAIN_PROGRESS_EXCEPTION" xml:space="preserve">
+    <value>例外が発生しました。</value>
+  </data>
+  <data name="IDS_MAIN_SAVE_EXCEPTION" xml:space="preserve">
+    <value>保存時に例外が発生しました</value>
+  </data>
+  <data name="IDS_MAIN_SAVE_PATH_EMPTY" xml:space="preserve">
+    <value>保存パスが指定されていません。</value>
+  </data>
+  <data name="IDS_MAIN_SELECT_FILE_CLICK" xml:space="preserve">
+    <value>ファイル選択ボタンクリック</value>
+  </data>
+  <data name="IDS_MAIN_SELECT_LOAD_CLICK" xml:space="preserve">
+    <value>読込クリック</value>
+  </data>
+  <data name="IDS_MAIN_SELECT_SAVE_CLICK" xml:space="preserve">
+    <value>保存クリック</value>
+  </data>
+  <data name="IDS_MAIN_SHOWN_EXCEPTION" xml:space="preserve">
+    <value>Shownで例外発生</value>
+  </data>
+  <data name="IDS_MAIN_START_EXCEPTION" xml:space="preserve">
+    <value>パック失敗
+処理に失敗しました</value>
+  </data>
+  <data name="IDS_MAIN_START_IMAGE_EMPTY" xml:space="preserve">
+    <value>パック失敗
+画像が空です</value>
+  </data>
+  <data name="IDS_MAIN_START_PATH_EMPTY" xml:space="preserve">
+    <value>パック失敗
+ファイル名が空です</value>
+  </data>
+  <data name="IDS_MAIN_TITLE_FORMAT" xml:space="preserve">
+    <value>{0}{2} - {1}</value>
+  </data>
+  <data name="IDS_MAIN_TITLE_UPDATE_MARK" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="IDS_MAIN_WIDTH_CHANGE_EXCEPTION" xml:space="preserve">
+    <value>横幅変更イベントで例外発生</value>
+  </data>
+  <data name="IDS_VBTN_CLICK_EXCEPTION" xml:space="preserve">
+    <value>VisualButtonクリックで例外発生</value>
+  </data>
+  <data name="IDS_VBTN_ENABLE_EXCEPTION" xml:space="preserve">
+    <value>VisualButtonイネーブルチェンジで例外発生</value>
+  </data>
+  <data name="IDS_VBTN_LOAD_EXCEPTION" xml:space="preserve">
+    <value>VisualButtonロードで例外発生</value>
+  </data>
+  <data name="IDS_VBTN_LOAD_IMG_EXCEPTION" xml:space="preserve">
+    <value>VisualButton画像読込で例外発生 (path={0})</value>
+  </data>
+  <data name="IDS_VBTN_LOAD_IMG_IS_NULL" xml:space="preserve">
+    <value>VisualButton画像読込 (pathがnull)</value>
+  </data>
+  <data name="IDS_VBTN_LOAD_IMG_OPEN" xml:space="preserve">
+    <value>VisualButton画像読込 (path={0})</value>
+  </data>
+  <data name="IDS_VBTN_LOAD_IMG_SUCCESS" xml:space="preserve">
+    <value>VisualButton画像読込成功</value>
+  </data>
+  <data name="IDS_VBTN_MDOWN_EXCEPTION" xml:space="preserve">
+    <value>VisualButtonマウスダウンで例外発生</value>
+  </data>
+  <data name="IDS_VBTN_MUP_EXCEPTION" xml:space="preserve">
+    <value>VisualButtonマウスアップで例外発生</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="spritepacker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\spritepacker.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
