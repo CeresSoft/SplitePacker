@@ -1,4 +1,16 @@
-﻿using SplitePacker.Properties;
+﻿//=============================================================================
+// システム名称　　　： スプライトパッカー
+// サブシステム名　　： 
+// 機能名　　　　　　： 
+// ソースファイル名　： Form1.cs
+//-----------------------------------------------------------------------------
+// 機能概要　　　　　： メイン画面
+//-----------------------------------------------------------------------------
+// 改訂履歴    区分  改訂番号  社名)担当   内容
+// 2014.06.02  新規  ----      CS)杉原
+//=============================================================================
+
+using SplitePacker.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +25,9 @@ using System.Xml.Serialization;
 
 namespace SplitePacker
 {
+    /// <summary>
+    /// メインフォーム
+    /// </summary>
     public partial class Form1 : Form
     {
         /// <summary>
@@ -77,10 +92,11 @@ namespace SplitePacker
         }
 
         /// <summary>
-        /// メッセージ表示
+        /// 例外メッセージ表示
         /// </summary>
-        /// <param name="message"></param>
-        /// <param name="ex"></param>
+        /// <param name="message">表示メッセージ</param>
+        /// <param name="ex">Exception</param>
+        /// <remarks>メッセージとExceptionはWarnログで出力します</remarks>
         protected void ShowMessage(string message, Exception ex)
         {
             try
@@ -103,7 +119,8 @@ namespace SplitePacker
         /// <summary>
         /// メッセージ表示
         /// </summary>
-        /// <param name="message"></param>
+        /// <param name="message">表示メッセージ</param>
+        /// <remarks>メッセージはInfoログで出力します</remarks>
         protected void ShowMessage(string message)
         {
             try
@@ -126,8 +143,8 @@ namespace SplitePacker
         /// <summary>
         /// 作成クリック処理
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているEventArgs</param>
         private void buttonCreate_Click(object sender, EventArgs e)
         {
             try
@@ -223,8 +240,9 @@ namespace SplitePacker
         /// <summary>
         /// リストボックスDragEnter
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているDragEventArgs</param>
+        /// <remarks>DataFormats.FileDropだけ受け付ける</remarks>
         private void listBox1_DragEnter(object sender, DragEventArgs e)
         {
             try
@@ -258,8 +276,9 @@ namespace SplitePacker
         /// <summary>
         /// リストボックスDrop処理
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているDragEventArgs</param>
+        /// <remarks>DataFormats.FileDropだけ受け付ける</remarks>
         private void listBox1_DragDrop(object sender, DragEventArgs e)
         {
             try
@@ -314,8 +333,8 @@ namespace SplitePacker
         /// <summary>
         /// バックグラウンド実行
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているDoWorkEventArgs</param>
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             try
@@ -344,8 +363,8 @@ namespace SplitePacker
         /// <summary>
         /// 画像パック完了
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているRunWorkerCompletedEventArgs</param>
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             try
@@ -385,8 +404,8 @@ namespace SplitePacker
         /// <summary>
         /// ファイル選択ボタンクリック
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているEventArgs</param>
         private void buttonSeletctFile_Click(object sender, EventArgs e)
         {
             try
@@ -428,8 +447,8 @@ namespace SplitePacker
         /// <summary>
         /// 初期化ボタンクリック
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているEventArgs</param>
         private void buttonClear_Click(object sender, EventArgs e)
         {
             try
@@ -460,8 +479,8 @@ namespace SplitePacker
         /// <summary>
         /// バックグラウンドのProgressChange
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているProgressChangedEventArgs</param>
         private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             try
@@ -488,8 +507,8 @@ namespace SplitePacker
         /// <summary>
         /// 保存ボタンクリック
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているEventArgs</param>
         private void buttonSave_Click(object sender, EventArgs e)
         {
             try
@@ -564,8 +583,8 @@ namespace SplitePacker
         /// <summary>
         /// 読込ボタンクリック
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているEventArgs</param>
         private void buttonLoad_Click(object sender, EventArgs e)
         {
             try
@@ -615,7 +634,7 @@ namespace SplitePacker
                     path = ofd.FileName;
                 }
 
-                this.Load(path);
+                this.DataLoad(path);
             }
             catch (Exception ex)
             {
@@ -624,11 +643,10 @@ namespace SplitePacker
         }
 
         /// <summary>
-        /// 読込処理
+        /// データ読込処理
         /// </summary>
-        /// <param name="path"></param>
-        /// <returns></returns>
-        public void Load(string path)
+        /// <param name="path">データファイルパス</param>
+        public void DataLoad(string path)
         {
             //パス無し判定
             if (string.IsNullOrEmpty(path))
@@ -680,7 +698,7 @@ namespace SplitePacker
         /// <summary>
         /// タイトル更新処理
         /// </summary>
-        /// <param name="bUpdate"></param>
+        /// <param name="bUpdate">更新フラグ</param>
         private void UpdateTitle(bool bUpdate)
         {
             this._update = bUpdate;
@@ -709,8 +727,8 @@ namespace SplitePacker
         /// <summary>
         /// 初期表示時
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているEventArgs</param>
         private void Form1_Shown(object sender, EventArgs e)
         {
             try
@@ -723,7 +741,7 @@ namespace SplitePacker
                 if (cmds.GetLength(0) >= Form1.COMMAND_ARGS_MIN)
                 {
                     //ファイルが指定されている場合は読込む
-                    this.Load(cmds[Form1.COMMAND_ARGS_FILENAME]);
+                    this.DataLoad(cmds[Form1.COMMAND_ARGS_FILENAME]);
                 }
                 else
                 {
@@ -740,8 +758,8 @@ namespace SplitePacker
         /// <summary>
         /// パス変更
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているEventArgs</param>
         private void textPath_TextChanged(object sender, EventArgs e)
         {
             try
@@ -759,8 +777,8 @@ namespace SplitePacker
         /// <summary>
         /// 横幅変更
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているEventArgs</param>
         private void numWidth_ValueChanged(object sender, EventArgs e)
         {
             try
@@ -777,8 +795,8 @@ namespace SplitePacker
         /// <summary>
         /// 縦幅変更
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているEventArgs</param>
         private void numHeight_ValueChanged(object sender, EventArgs e)
         {
             try
@@ -795,8 +813,8 @@ namespace SplitePacker
         /// <summary>
         /// 2の累乗判定
         /// </summary>
-        /// <param name="v"></param>
-        /// <returns></returns>
+        /// <param name="v">累乗判定する値</param>
+        /// <returns>TRUE=２の累乗 / FALSE=2の累乗以外</returns>
         private bool isTwoExp(int v)
         {
             int vv = v;
@@ -819,8 +837,8 @@ namespace SplitePacker
         /// <summary>
         /// フォームClosing
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているFormClosingEventArgs</param>
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             try

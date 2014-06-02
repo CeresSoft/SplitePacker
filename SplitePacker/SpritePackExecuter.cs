@@ -1,4 +1,16 @@
-﻿using SplitePacker.Properties;
+﻿//=============================================================================
+// システム名称　　　： スプライトパッカー
+// サブシステム名　　： 
+// 機能名　　　　　　： 
+// ソースファイル名　： SpritePackExecuter.cs
+//-----------------------------------------------------------------------------
+// 機能概要　　　　　： 画像パック処理クラス
+//-----------------------------------------------------------------------------
+// 改訂履歴    区分  改訂番号  社名)担当   内容
+// 2014.06.02  新規  ----      CS)杉原
+//=============================================================================
+
+using SplitePacker.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +22,9 @@ using System.Threading.Tasks;
 
 namespace SplitePacker
 {
+    /// <summary>
+    /// 画像パック処理クラス
+    /// </summary>
     public class SpritePackExecuter
     {
         /// <summary>
@@ -45,7 +60,8 @@ namespace SplitePacker
         /// <summary>
         /// メッセージ出力
         /// </summary>
-        /// <param name="message"></param>
+        /// <param name="message">表示メッセージ</param>
+        /// <remarks>メッセージの内容をInfoログとして出力します</remarks>
         private void ReportProgress(string message)
         {
             LOGGER.Info(message);
@@ -58,8 +74,7 @@ namespace SplitePacker
         /// <summary>
         /// パック実行
         /// </summary>
-        /// <param name="args"></param>
-        /// <returns></returns>
+       /// <returns>実行結果のエラーメッセージ（成功の場合は空文字を返す)</returns>
         public string exec()
         {
             //ビットマップ生成
@@ -117,8 +132,8 @@ namespace SplitePacker
         /// <summary>
         /// 画像パック
         /// </summary>
-        /// <param name="g"></param>
-        /// <returns></returns>
+        /// <param name="g">Graphics</param>
+        /// <returns>ImagePackResult値</returns>
         private ImagePackResult ImagePack(Graphics g)
         {
             int x = 0;

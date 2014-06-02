@@ -1,4 +1,16 @@
-﻿using System;
+﻿//=============================================================================
+// システム名称　　　： スプライトパッカー
+// サブシステム名　　： 
+// 機能名　　　　　　： 
+// ソースファイル名　： VisualButton.cs
+//-----------------------------------------------------------------------------
+// 機能概要　　　　　： 画像ボタン
+//-----------------------------------------------------------------------------
+// 改訂履歴    区分  改訂番号  社名)担当   内容
+// 2014.06.02  新規  ----      CS)杉原
+//=============================================================================
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -11,6 +23,9 @@ using SplitePacker.Properties;
 
 namespace SplitePacker
 {
+    /// <summary>
+    /// 画像ボタン
+    /// </summary>
     public partial class VisualButton : UserControl
     {
         /// <summary>
@@ -106,6 +121,9 @@ namespace SplitePacker
         /// </summary>
         private bool _buttonDown = false;
 
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
         public VisualButton()
         {
             InitializeComponent();
@@ -114,8 +132,8 @@ namespace SplitePacker
         /// <summary>
         /// ボタンクリックのリレー
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているEventArgs</param>
         private void vbutton_Click(object sender, EventArgs e)
         {
             try
@@ -134,8 +152,8 @@ namespace SplitePacker
         /// <summary>
         /// マウスダウンイベント
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているMouseEventArgs</param>
         private void vbutton_MouseDown(object sender, MouseEventArgs e)
         {
             try
@@ -152,8 +170,8 @@ namespace SplitePacker
         /// <summary>
         /// マウスアップイベント
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているMouseEventArgs</param>
         private void vbutton_MouseUp(object sender, MouseEventArgs e)
         {
             try
@@ -170,8 +188,8 @@ namespace SplitePacker
         /// <summary>
         /// 有効/無効切替イベント
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているEventArgs</param>
         private void VisualButton_EnabledChanged(object sender, EventArgs e)
         {
             try
@@ -187,8 +205,8 @@ namespace SplitePacker
         /// <summary>
         /// ロードイベント
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">送信元</param>
+        /// <param name="e">イベント データを格納しているEventArgs</param>
         private void VisualButton_Load(object sender, EventArgs e)
         {
             try
@@ -230,8 +248,8 @@ namespace SplitePacker
         /// <summary>
         /// 画像読込
         /// </summary>
-        /// <param name="path"></param>
-        /// <returns></returns>
+        /// <param name="path">画像パス</param>
+        /// <returns>Image (読込めない場合はnullを返す)</returns>
         private Image LoadImage(string path)
         {
             try
