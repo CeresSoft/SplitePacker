@@ -22,7 +22,7 @@ ParticleSystemでパーティクルをアニメーションさせようとすると
 Visual Studio 2013
 
 #### 確認環境  
-Windows 7 / 8.1 + .NET Framework 4
+Windows 7 / 8.1 + .NET Framework 4.5
 
 
 
