@@ -261,9 +261,19 @@ namespace SplitePacker
                     return null;
                 }
 
+#if CHG_20140616
                 //画像読込
                 LOGGER.Info(string.Format(Resources.IDS_VBTN_LOAD_IMG_OPEN, path));
                 using (System.IO.FileStream st = System.IO.File.OpenRead(path))
+#else
+                //フルパスにする
+                string exeDir = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+                string fullpath = System.IO.Path.Combine(exeDir, path);
+
+                //画像読込
+                LOGGER.Info(string.Format(Resources.IDS_VBTN_LOAD_IMG_OPEN, fullpath));
+                using (System.IO.FileStream st = System.IO.File.OpenRead(fullpath))
+#endif
                 {
                     Image result = Image.FromStream(st);
                     LOGGER.Info(Resources.IDS_VBTN_LOAD_IMG_SUCCESS);
