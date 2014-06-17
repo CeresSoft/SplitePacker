@@ -2,6 +2,7 @@ SplitePacker
 ===============
 Last Update 01 Jun 2014  
 Copyright &copy; 2014 CeresSoft  
+* [http://www.ceressoft.co.jp/] (http://www.ceressoft.co.jp/)
 Distributed under the MIT License
 
 
@@ -63,5 +64,11 @@ SAVEボタンで保存した設定内容を読み込みます。
 
 改版履歴 (Change Log)
 ----------
+#### Version 1.1.0.1 (14 Jun 2014)
+.spackファイルダブルクリックで起動した場合に、カレントディレクトリが
+アプリケーションディレクトリになっていなかったため、ボタン画像の読込に
+失敗していた。ボタン画像をフルパスにして読込ように修正。
+
+
 #### Version 1.0.0.0 (01 Jun 2014)
 新規作成
