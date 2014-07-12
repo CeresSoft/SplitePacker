@@ -1,7 +1,7 @@
 SplitePacker
 ===============
 Last Update 01 Jun 2014  
-Copyright &copy; 2014 CeresSoft <http://www.ceressoft.co.jp/>  
+Copyright &copy; 2014 CeresSoft - <http://www.ceressoft.co.jp/>  
 Distributed under the MIT License
 
 
